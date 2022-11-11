@@ -1,0 +1,53 @@
+#Exercício 1
+
+
+
+
+def funcao():
+  a = ((B+b)* h) / 2
+  print("A área do trapézio é: ", a )
+
+B = float (input("Número da Base Maior:"))
+b = float (input("Número da Base Menor: "))
+h = float (input("Número da Altura: ") )
+
+funcao()
+
+
+
+
+
+#Exercício 2
+
+def somaimposto(taxa,custo):
+  valor = taxa * custo
+  valor2 = custo + custo
+  return valor2
+  
+
+taxaimposto = float(input("Número da quantia de imposto:"))
+custo = float(input("Custo do item antes do imposto:"))
+taxa = taxaimposto / 100
+
+total = somaimposto(taxa,custo)
+print ("O novo valor é R${:.2f}".format(total))
+
+
+
+
+
+
+
+#Exercício 3
+
+def hora12 (horas,minutos):
+  horanova = hora if hora <=12 else hora-12
+  AM_ou_PM = "AM" if hora <12 else "PM"
+  return str(horanova)+":"+str(minutos)+AM_ou_PM
+  
+while True:
+   hora = int(input("Informe a hora:"))
+   if hora ==0:
+    break
+   minutos = int(input("Informe os minutos"))
+   print(hora12(hora,minutos))
